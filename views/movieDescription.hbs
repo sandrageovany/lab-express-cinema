@@ -1,0 +1,20 @@
+<div class="container">
+     <a href="/movies" class="info link">Go back</a>
+    <div class="row">
+            {{>movie movieDescription}}
+        
+
+      <p> Director: {{movieDescription.director}}</p> 
+      <ul> 
+          {{#each movieDescription.stars}}
+          <li>{{this}}</li>
+          {{/each}}
+           </ul> 
+
+           <p>{{movieDescription.description}}</p>
+           <p>{{movieDescription.showtimes}} </p>
+
+      
+
+    </div>
+</div>

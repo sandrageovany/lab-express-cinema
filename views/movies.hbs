@@ -1,0 +1,10 @@
+<div class="container">
+    <h2> Ironhack Cinema</h2>
+    <h5>Click on the movie to check the showtime!</h5>
+    <div class="row">
+        {{#each moviesFromDB}}
+            {{>movie}}
+        {{/each}}
+
+    </div>
+</div>
